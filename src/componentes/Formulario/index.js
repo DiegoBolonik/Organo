@@ -19,12 +19,16 @@ const Formulario = (props) => {
             imagem,
             time
         })
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return (
         <section className="formulario">
             <form onSubmit={aoSalvar}>
-                <h2>Preencha os dados para criar o card do colaborador</h2>
+                <h2>Preencha os dados para criar o card do bruxo</h2>
                 <CampoTexto 
                     obrigatorio={true} 
                     label="Nome" 
@@ -47,13 +51,13 @@ const Formulario = (props) => {
                 />
                 <ListaSuspensa 
                     obrigatorio={true} 
-                    label="Time" 
+                    label="Casa" 
                     itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)} 
                 />
                 <Botao>
-                    Criar Card
+                    Criar Bruxo
                 </Botao>
             </form>
         </section>

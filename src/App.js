@@ -7,39 +7,29 @@ function App() {
 
   const times = [
     {
-      nome: 'Programação',
-      corPrimaria: '#57C278',
-      corSecundaria: '#D9F7E9',
+      nome: 'Grifinória',
+      corPrimaria: '#8B0000',
+      corSecundaria: '#FFD700',
     },
     {
-      nome: 'Front-End',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF',
+      nome: 'Lufa-Lufa',
+      corPrimaria: '#FFD700',
+      corSecundaria: '#1C1C1C',
     },
     {
-      nome: 'Data Sciense',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2',
+      nome: 'Corvinal',
+      corPrimaria: '#00008B',
+      corSecundaria: '#8B4513',
     },
     {
-      nome: 'Devops',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8'
+      nome: 'Sonserina',
+      corPrimaria: '#006400',
+      corSecundaria: '#A9A9A9'
     },
     {
-      nome: 'UX e Design',
-      corPrimaria: '#D86EBF',
-      corSecundaria: '#FAE5F5',
-    },
-    {
-      nome: 'Mobile',
-      corPrimaria: '#FEBA05',
-      corSecundaria: '#FFF5D9',
-    },
-    {
-      nome: 'Inovação e Gestão',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF',
+      nome: 'Ministério da magia',
+      corPrimaria: '#4B0082',
+      corSecundaria: '#9400D3',
     }
   ]
 
@@ -60,7 +50,7 @@ function App() {
         nome={time.nome} 
         corPrimaria={time.corPrimaria} 
         corSecundaria={time.corSecundaria}
-        colaboradores={colaboradores.filter(colaborador => colaborador.time == time.nome)}
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
       />)}
       
     </div>
